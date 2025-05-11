@@ -1,25 +1,26 @@
-import React from "react";
-
-function Features() {
+export default function Features() {
     return (
-        <section id="features" className="features">
-            <h2> Key features</h2>
-            <div className="features-grid" >
-                <div className="feature-item">
-                    <h3> Time Tracking</h3>
-                    <p> Log hours and managage your time on every project.</p>
-                </div>
-                <div className="feature-item"> 
-                    <h3> invoicing </h3>
-                    <p> Generate and send invoices in seconds. </p>
-                </div>
-                <div className="feature-item"> 
-                    <h3> Analytics </h3>
-                    <p> Get insights on your income and productivity. </p>
-                </div>
-            </div>
-        </section>
-
+      <section id="features" className="features">
+        <h2>Key Features</h2>
+        <p className="subtitle">Everything you need to manage your freelance workflow in one place.</p>
+        <div className="features-grid">
+          <div className="feature-item" data-aos="fade-up">
+            <img src="https://img.icons8.com/ios/64/time.png" alt="Time Tracking" />
+            <h3>Time Tracking</h3>
+            <p>Track hours and tasks with ease using our built-in timer.</p>
+          </div>
+          <div className="feature-item" data-aos="fade-up">
+            <img src="https://img.icons8.com/ios/64/invoice.png" alt="Invoicing" />
+            <h3>Invoicing</h3>
+            <p>Send professional invoices to clients in just a few clicks.</p>
+          </div>
+          <div className="feature-item" data-aos="fade-up">
+            <img src="https://img.icons8.com/ios/64/line-chart.png" alt="Analytics" />
+            <h3>Analytics</h3>
+            <p>See insights on revenue, time usage, and productivity.</p>
+          </div>
+        </div>
+      </section>
     );
-}
-export default Features;
+  }
+  

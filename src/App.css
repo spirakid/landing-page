@@ -1,27 +1,241 @@
 .hero {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: white;
-  padding: 100px 20px;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  color: #fff;
+}
 
+.hero-content {
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 25px;
+}
+
+.hero button {
+  background-color: #ff7f50;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .features {
   padding: 80px 20px;
   text-align: center;
+  background: #fff;
 }
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.features .subtitle {
+  color: #666;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  margin-top: 40px;
 }
-.feature-item{
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 8px;
+.feature-item {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  width: 260px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+.feature-item:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+}
+.feature-item img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+.feature-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+.feature-item p {
+  font-size: 0.95em;
+  color: #555;
+}
 
+.pricing {
+  padding: 80px 20px;
+  background: #f8f9fa;
+  text-align: center;
 }
+.pricing .subtitle {
+  font-size: 1.1em;
+  color: #666;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.plan {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  width: 280px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.plan h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.plan .price {
+  font-size: 2em;
+  margin: 10px 0 20px;
+  color: #333;
+}
+.plan .price span {
+  font-size: 0.6em;
+  color: #888;
+}
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.plan ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+.plan button {
+  background: #ff7f50;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.plan.pro {
+  border: 2px solid #ff7f50;
+  position: relative;
+}
+.plan .badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff7f50;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.contact {
+  padding: 80px 20px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.contact button {
+  padding: 12px;
+  background: #ff7f50;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact button:hover {
+  background: #e46b3f;
+}
+.form-status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .features-grid, .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.about {
+  background: #fefefe;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+.about-content {
+  max-width: 700px;
+  text-align: center;
+}
+.about-content h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+.about-content p {
+  font-size: 1.05em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+

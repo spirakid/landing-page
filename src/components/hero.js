@@ -1,12 +1,12 @@
-import React from "react";
-
-function Hero() {
-    return(
-        <section id="hero" className="hero tetx-center">
-            <h1> Freelance Dashboard Pro</h1>
-            <p> Manage your projects and clients in one place.</p>
-            <button className="btn btn-primary"> Get started</button>
-        </section>
+export default function Hero() {
+    return (
+      <section className="hero">
+        <div className="hero-content">
+          <h1>Manage Freelance Projects Like a Pro</h1>
+          <p>Your all-in-one dashboard for tracking time, clients, invoices, and progress — built for serious freelancers.</p>
+          <button>Get Started Free</button>
+        </div>
+      </section>
     );
-}
-export default Hero;
+  }
+  

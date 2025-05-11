@@ -1,13 +1,14 @@
-import Navbar from './components/navbar'
+
 import Hero from './components/hero' ;
 import Features from './components/features' ;
 import About from './components/about' ;
 import Pricing from './components/pricing' ;
-import Contact from './components/contact' 
+import Contact from './components/contact';
+import './App.css';
 
 function App() {
   return ( <div>
-    <Navbar />
+    
     <Hero />
     <Features />
     <About />
@@ -17,3 +18,4 @@ function App() {
     </div> 
     );
 }
+export default App;
